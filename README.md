@@ -22,7 +22,6 @@ Technologies
 Project Structure
 -----------------
 
-Copy code
 
 `./app |-- api/ |   |-- routes.py - define API routes   | |-- models/ |   |-- shop.py - Shop data models | |-- services/ |   |-- maps.py - map generation functions | |-- database/ |   |-- crud.py - functions to access database | main.py - create FastAPI app`
 
@@ -32,7 +31,7 @@ Getting Started
 ### Prerequisites
 
 *   Python 3.6+
-*   Pipenv or venv for virtual environments
+*   virtualenv for virtual environments
 
 ### Installation
 
@@ -40,7 +39,6 @@ Getting Started
 
 <!---->
 
-Copy code
 
 `git clone repo`
 
@@ -48,9 +46,8 @@ Copy code
 
 <!---->
 
-Copy code
 
-`pipenv install`
+`virtualenv env source env/bin/activate && pip install -r requirements.txt`
 
 3. Create a Deta base
 
@@ -62,9 +59,8 @@ Copy code
 
 <!---->
 
-Copy code
 
-`pipenv run uvicorn main:app`
+`uvicorn main:app --reload`
 
 The API will be running at `http://127.0.0.1:8000`.
 
@@ -75,37 +71,31 @@ The API endpoints are:
 
 ### Get all shops
 
-Copy code
 
 `GET /shops`
 
 ### Get single shop
 
-Copy code
 
 `GET /shops/{id}`
 
 ### Create shop
 
-Copy code
 
 `POST /shops`
 
 ### Update shop
 
-Copy code
 
 `PUT /shops/{id}`
 
 ### Delete shop
 
-Copy code
 
 `DELETE /shops/{id}`
 
 ### Get map
 
-Copy code
 
 `GET /maps`
 
