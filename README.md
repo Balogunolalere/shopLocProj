@@ -99,3 +99,4 @@ The API endpoints are:
 
 `GET /maps`
 
+![Alt text](image.png)
