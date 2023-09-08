@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+
+deta
+python-multipart
+
+passlib
+pydantic
+python-jose
+
+folium
+pandas
+
+requests
+
+python-dotenv
